@@ -10,8 +10,8 @@ class Mailer():
 
     def sendMail(self, info: list) -> None:
         user = os.getenv('GMAIL')
-        to = info[0]
-        name = info[1]
+        name = info[0]
+        to = info[1]
         subject = info[2]
         message = info[3]
         pwd = os.getenv('GMAIL_PASSWORD')

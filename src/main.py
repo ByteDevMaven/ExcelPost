@@ -11,12 +11,12 @@ def main():
         if (command == 1):
             row = int(input("Type Row Number: "))
             rowList = excel.getRow(row)
-            print(f"Email: {rowList[0]}\nName: {rowList[1]}\nSubject: {rowList[2]}\nBody: {rowList[3]}")
+            print(f"Name: {rowList[0]}\nEmail: {rowList[1]}\nSubject: {rowList[2]}\nBody: {rowList[3]}")
 
         elif (command == 2):
             row = int(input("Type Row Number to Send Mail: "))
             mail.sendMail(excel.getRow(row))
-            
+
         else:
             break
 
