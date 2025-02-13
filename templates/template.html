@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Notification</title>
+    <style>
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #f9f9f9;
+        }
+
+        h2 {
+            color: #0056b3;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Hello ${Name},</h2>
+        <p>${Message}</p>
+        <p>Best regards,<br>Python Script</p>
+        <div class="footer">
+            <p>If you have any questions, feel free to reply to this email.</p>
+        </div>
+    </div>
+</body>
+
+</html>
